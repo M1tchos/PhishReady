@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "channel": "Email",
+    "category": "Account Security",
+    "title": "Urgent password reset request",
+    "from": "IT Support <support@eduvos-secure-login.com>",
+    "subject": "URGENT: Reset your account password immediately",
+    "body": "Your mailbox will be suspended within 30 minutes unless you confirm your password using the secure link below: https://eduvos-login-reset.example",
+    "answer": "Phishing",
+    "cues": [
+      "Threatening urgency",
+      "Suspicious imitation domain",
+      "Requests password confirmation",
+      "Unverified link"
+    ],
+    "explanation": "This is phishing because it pressures the user to act quickly and uses a domain that imitates, but does not match, the institution."
+  },
+  {
+    "id": 2,
+    "channel": "Email",
+    "category": "Student Finance",
+    "title": "Fee statement available on the student portal",
+    "from": "Student Finance <finance@eduvos.edu.za>",
+    "subject": "Your latest student account statement is available",
+    "body": "Your updated fee statement is now available. Please log in to the official Eduvos portal using your normal bookmark to view it.",
+    "answer": "Legitimate",
+    "cues": [
+      "Recognisable institutional domain",
+      "No request for password by email",
+      "Directs user to the normal portal"
+    ],
+    "explanation": "This appears legitimate because it uses an institutional domain and instructs the student to use the normal portal rather than an embedded suspicious login link."
+  },
+  {
+    "id": 3,
+    "channel": "SMS",
+    "category": "Banking / OTP",
+    "title": "Unexpected banking verification message",
+    "from": "Unknown mobile sender",
+    "subject": "SMS message",
+    "body": "Your banking profile has been limited. Confirm your account now at http://secure-bnk-update.example to avoid deactivation.",
+    "answer": "Phishing",
+    "cues": [
+      "Unknown sender",
+      "Threatens deactivation",
+      "Non-bank link",
+      "Unexpected request"
+    ],
+    "explanation": "This is phishing because it uses fear, a suspicious non-bank link and an unexpected request to confirm account information."
+  },
+  {
+    "id": 4,
+    "channel": "WhatsApp",
+    "category": "Reward Scam",
+    "title": "Free data giveaway message",
+    "from": "Campus Deals Group",
+    "subject": "WhatsApp message",
+    "body": "Congratulations! Students selected today receive 20GB free data. Complete your claim form and card verification here: bit.ly/studentdata-promo",
+    "answer": "Phishing",
+    "cues": [
+      "Unexpected reward",
+      "Requests card verification",
+      "Shortened link",
+      "No official source"
+    ],
+    "explanation": "This is phishing because it uses a fake reward to lure users into clicking and submitting sensitive information."
+  },
+  {
+    "id": 5,
+    "channel": "Microsoft Teams",
+    "category": "Collaboration Platform",
+    "title": "Unexpected file share from lecturer name",
+    "from": "Prof. Daniels (external guest)",
+    "subject": "Teams file request",
+    "body": "Please review the exam changes here and sign in with your university credentials to access the secure document.",
+    "answer": "Suspicious",
+    "cues": [
+      "Unexpected request",
+      "External source",
+      "Credential prompt",
+      "Should be independently verified"
+    ],
+    "explanation": "This is suspicious because it may be malicious. The safest action is to verify the request independently before interacting."
+  },
+  {
+    "id": 6,
+    "channel": "Email",
+    "category": "Parcel Delivery",
+    "title": "Missed package notice",
+    "from": "Courier Hub <dispatch@track-parcel-help.net>",
+    "subject": "Final notice: your delivery is waiting",
+    "body": "We could not deliver your parcel today. Pay a small redelivery fee now using the attached form to avoid returning the item.",
+    "answer": "Phishing",
+    "cues": [
+      "Unknown sender",
+      "Unexpected fee request",
+      "Pushes immediate payment",
+      "Generic delivery claim"
+    ],
+    "explanation": "This is phishing because it uses a common delivery pretext to pressure the user into submitting payment details."
+  },
+  {
+    "id": 7,
+    "channel": "Email",
+    "category": "Library Services",
+    "title": "Library due-date reminder",
+    "from": "Library Services <library@eduvos.edu.za>",
+    "subject": "Reminder: return date for borrowed book",
+    "body": "This is a reminder that your borrowed textbook is due on Friday. You may renew it through the student library portal if needed.",
+    "answer": "Legitimate",
+    "cues": [
+      "Routine administrative reminder",
+      "Institutional domain",
+      "No suspicious request for credentials or payment"
+    ],
+    "explanation": "This appears legitimate because it is a routine reminder from an institutional address and does not ask for sensitive information."
+  },
+  {
+    "id": 8,
+    "channel": "Email",
+    "category": "Job Scam",
+    "title": "High-paying remote student assistant job",
+    "from": "HR Dept <campusjobsrecruitment@gmail.com>",
+    "subject": "Earn R4,000 weekly working 2 hours from home",
+    "body": "Kindly send your full name, ID copy, bank name and contact number immediately to secure your position today.",
+    "answer": "Phishing",
+    "cues": [
+      "Too good to be true",
+      "Public email address",
+      "Requests sensitive documents",
+      "Pressure to respond immediately"
+    ],
+    "explanation": "This is phishing because it uses a fake recruitment opportunity to harvest personal and potentially financial information."
+  },
+  {
+    "id": 9,
+    "channel": "SMS",
+    "category": "MFA / Verification",
+    "title": "One-time pin not requested by you",
+    "from": "Official bank shortcode",
+    "subject": "SMS message",
+    "body": "Use OTP 553921 to complete your login. If this was not you, ignore this message and contact the bank through the official app.",
+    "answer": "Suspicious",
+    "cues": [
+      "Message may be genuine but unexpected",
+      "No link included",
+      "Signals possible attempted access by someone else"
+    ],
+    "explanation": "This is best treated as suspicious because even if the OTP message is genuine, you did not initiate it and should verify through official channels."
+  },
+  {
+    "id": 10,
+    "channel": "Email",
+    "category": "Bursary Offer",
+    "title": "Exclusive bursary acceptance notice",
+    "from": "Scholarship Board <awards@student-support-grants.org>",
+    "subject": "You have been pre-approved for a bursary",
+    "body": "To receive payment, please complete the attached form with your banking details and login information by midnight.",
+    "answer": "Phishing",
+    "cues": [
+      "Unexpected bursary",
+      "Requests banking details and login information",
+      "Generic non-institutional source"
+    ],
+    "explanation": "This is phishing because legitimate bursary communication would not request login credentials or use pressure in this way."
+  },
+  {
+    "id": 11,
+    "channel": "Email",
+    "category": "Cloud Storage",
+    "title": "Shared document from known class representative",
+    "from": "Class Rep <repclass2026@outlook.com>",
+    "subject": "Updated group assignment notes",
+    "body": "Hi everyone, I uploaded the updated notes to the shared class drive. Please let me know if you cannot open them. Link: shared-notes drive",
+    "answer": "Suspicious",
+    "cues": [
+      "Could be normal behaviour",
+      "External public email",
+      "Unclear link format",
+      "Needs verification if unexpected"
+    ],
+    "explanation": "This is suspicious rather than clearly legitimate because the context could be genuine, but the source and link should be verified first."
+  },
+  {
+    "id": 12,
+    "channel": "Email",
+    "category": "Course Platform",
+    "title": "Scheduled maintenance notice",
+    "from": "LMS Admin <noreply@eduvos.edu.za>",
+    "subject": "Planned maintenance of the learning platform",
+    "body": "The learning platform will be unavailable on Saturday from 20:00 to 22:00 for routine maintenance. No action is required.",
+    "answer": "Legitimate",
+    "cues": [
+      "Routine announcement",
+      "Institutional no-reply account",
+      "No urgent demand or sensitive request"
+    ],
+    "explanation": "This appears legitimate because it is an informational system notice and does not request action or data."
+  },
+  {
+    "id": 13,
+    "channel": "WhatsApp",
+    "category": "Impersonation",
+    "title": "Friend asking for emergency OTP",
+    "from": "Known contact name, new number",
+    "subject": "WhatsApp message",
+    "body": "Hey, I am stuck and need your help. Please forward the OTP you just got so I can log back into my account quickly.",
+    "answer": "Phishing",
+    "cues": [
+      "Unexpected number",
+      "Requests OTP",
+      "Emotional pressure",
+      "Identity may be hijacked or impersonated"
+    ],
+    "explanation": "This is phishing because no one should ever request your OTP, even if they appear to be someone you know."
+  },
+  {
+    "id": 14,
+    "channel": "Email",
+    "category": "Password Hygiene",
+    "title": "Security tips from student support",
+    "from": "Student Support <support@eduvos.edu.za>",
+    "subject": "Top 5 ways to keep your account secure",
+    "body": "Remember to create strong passwords, enable multi-factor authentication where available and report suspicious messages to your institution.",
+    "answer": "Legitimate",
+    "cues": [
+      "General awareness content",
+      "Institutional address",
+      "No link-based pressure or credential request"
+    ],
+    "explanation": "This appears legitimate because it shares generic awareness guidance and does not ask for anything unsafe."
+  },
+  {
+    "id": 15,
+    "channel": "Email",
+    "category": "Meeting Invite",
+    "title": "Unexpected Zoom meeting invitation",
+    "from": "Admin Office <meeting-notice@zoom-campus-access.co>",
+    "subject": "Mandatory disciplinary hearing at 15:00 today",
+    "body": "Join the confidential hearing immediately using the secure meeting link below and sign in using your student account.",
+    "answer": "Phishing",
+    "cues": [
+      "Fear-based pressure",
+      "Non-official domain",
+      "Unexpected disciplinary pretext",
+      "Credential request"
+    ],
+    "explanation": "This is phishing because it weaponises urgency and fear while directing the user to a non-official source."
+  },
+  {
+    "id": 16,
+    "channel": "Email",
+    "category": "Exam Results",
+    "title": "Exam results notification",
+    "from": "Academic Office <academic@eduvos.edu.za>",
+    "subject": "Semester results released",
+    "body": "Your semester results have been released. Please access them by signing in to the official student portal using your existing bookmark.",
+    "answer": "Legitimate",
+    "cues": [
+      "Institutional domain",
+      "Normal academic process",
+      "No embedded credential harvesting link"
+    ],
+    "explanation": "This appears legitimate because it directs the student to the normal institutional portal and does not request credentials by email."
+  },
+  {
+    "id": 17,
+    "channel": "SMS",
+    "category": "SIM Swap",
+    "title": "SIM upgrade warning",
+    "from": "Mobile Service Team",
+    "subject": "SMS message",
+    "body": "Your SIM will stop working tonight unless you verify your identity now. Reply with your ID number and banking PIN to retain service.",
+    "answer": "Phishing",
+    "cues": [
+      "Requests highly sensitive information",
+      "Threatens loss of service",
+      "Unverified sender"
+    ],
+    "explanation": "This is phishing because no legitimate mobile provider should request a banking PIN by SMS."
+  },
+  {
+    "id": 18,
+    "channel": "Email",
+    "category": "QR Phishing",
+    "title": "Campus parking QR update",
+    "from": "Parking Services <parking-update@campusaccess-help.org>",
+    "subject": "Mandatory parking permit update",
+    "body": "Scan the QR code in the attached document and sign in using your university account before 17:00 to avoid a parking fine.",
+    "answer": "Phishing",
+    "cues": [
+      "Non-institutional domain",
+      "QR code hides destination",
+      "Financial threat",
+      "Credential request"
+    ],
+    "explanation": "This is phishing because it combines a hidden QR destination with urgency and a non-institutional domain."
+  },
+  {
+    "id": 19,
+    "channel": "Email",
+    "category": "Shared Calendar",
+    "title": "Calendar invitation from a known module lecturer",
+    "from": "Dr. Naidoo <naidoo@eduvos.edu.za>",
+    "subject": "Invitation: Research consultation session",
+    "body": "You have been invited to a research consultation session next Tuesday. The meeting appears in your institutional calendar. No additional sign-in is required.",
+    "answer": "Legitimate",
+    "cues": [
+      "Institutional sender",
+      "Expected academic context",
+      "No credentials requested"
+    ],
+    "explanation": "This appears legitimate because it fits a normal academic process and does not request sensitive information."
+  },
+  {
+    "id": 20,
+    "channel": "WhatsApp",
+    "category": "Account Recovery",
+    "title": "Fake support account recovery request",
+    "from": "Eduvos Support ✓ (unverified number)",
+    "subject": "WhatsApp message",
+    "body": "We detected a security issue with your student account. Please send your current password here so that we can secure the account for you.",
+    "answer": "Phishing",
+    "cues": [
+      "Support asking for password",
+      "Unverified WhatsApp source",
+      "Unexpected security alert"
+    ],
+    "explanation": "This is phishing because legitimate support should never ask you to send your password in a message."
+  }
+]
